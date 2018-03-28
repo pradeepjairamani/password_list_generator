@@ -10,9 +10,10 @@
 ########################
 
 import os
-
+import sys
 #Declarations
-
+if int(sys.version_info[0]) is 2:
+	input = raw_input
 global monthly
 global list1
 
@@ -188,4 +189,3 @@ for i in unique_list:
 falela.close()
 
 print ("[+]Total Words : ",count)
-os.system('pause')
